@@ -12,6 +12,7 @@ router.post(
 );
 router.get('/', PageController.getAllPage);
 router.get('/:id', PageController.getSinglePage);
+router.get('/page-content/:path', PageController.getPageContentByPath);
 router.patch('/:id', PageController.editPage);
 router.delete('/:id', PageController.deletePage);
 

@@ -1,8 +1,8 @@
 import express, { Application, Request, Response } from 'express';
 import cors from 'cors';
-import globalErrorHandler from './utils/errorHandler';
 import { ContactMessageController } from './app/modules/contactMessages/contact.messages.controller';
 import { Routes } from './app/routes/routes';
+import { globalErrorHandler } from './utils/globalErrorHandler';
 const app: Application = express();
 
 // parser

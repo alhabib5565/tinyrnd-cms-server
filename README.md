@@ -17,4 +17,4 @@
 - build
   - npm run build
   <h2>Project live link<h2>
-  <a href="https://mongoose-assigment-pt9psua1p-masumraihan.vercel.app/" target="_blank">https://mongoose-assigment-pt9psua1p-masumraihan.vercel.app/<a/> -->
+  <a href="https://tinyrnd-server-pt9psua1p-masumraihan.vercel.app/" target="_blank">https://tinyrnd-server-pt9psua1p-masumraihan.vercel.app/<a/> -->

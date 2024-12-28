@@ -38,6 +38,17 @@ const getSinglePage = catchAsync(async (req: Request, res: Response) => {
   });
 });
 
+const getPageContentByPath = catchAsync(async (req: Request, res: Response) => {
+  const result = await PageService.getPageContentByPath(req.params.path);
+
+  sendResponse(res, {
+    success: true,
+    statusCode: httpStatus.OK,
+    message: 'Page content retrived successfully',
+    data: result,
+  });
+});
+
 const editPage = catchAsync(async (req: Request, res: Response) => {
   const result = await PageService.editPage(req.params.id, req.body);
 
@@ -64,6 +75,7 @@ export const PageController = {
   createPage,
   getAllPage,
   getSinglePage,
+  getPageContentByPath,
   editPage,
   deletePage,
 };

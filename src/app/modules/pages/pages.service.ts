@@ -16,6 +16,11 @@ const getSinglePage = async (id: string) => {
   return result;
 };
 
+const getPageContentByPath = async (path: string) => {
+  const result = await Page.findOne({ path: `/${path}` });
+  return result;
+};
+
 const editPage = async (id: string, payload: Partial<TPage>) => {
   const result = await Page.findByIdAndUpdate(id, payload, { new: true });
   return result;
@@ -30,6 +35,7 @@ export const PageService = {
   createPage,
   getAllPage,
   getSinglePage,
+  getPageContentByPath,
   editPage,
   deletePage,
 };
